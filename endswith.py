@@ -1,9 +1,15 @@
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-# endswith metodo que verifica se a string fornecida termina com o 
-# argumento especificado e retorna TRue ou False
+print("Break ao encontrar 5:")
+for num in numeros:
+    if num == 5:
+        break  # Sai do loop
+    print(num)
+# Saída: 1, 2, 3, 4
 
-
-if 'epsilon'.endswith('on'):
-    print("yes")
-else:
-    print('no')
+print("\nContinue para números pares:")
+for num in numeros:
+    if num % 2 == 0:
+        continue  # Pula o resto do loop
+    print(num)
+# Saída: 1, 3, 5, 7, 9
